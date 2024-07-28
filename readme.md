@@ -4,7 +4,7 @@ Welcome to the Dev Journey Assignments repository! Here, you will find a collect
 
 
 ## Table of Contents
-##### Assignment-1 [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1) 
+##### Assignment-1 [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/) 
 | Question | Code | Live Link |
 |----------|------|-----------|
 | Question 1 | [Code](Assignment-1/Asg1Ex1.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex1.html) |
