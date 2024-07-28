@@ -8,10 +8,14 @@ Welcome to the Dev Journey Assignments repository! Here, you will find a collect
 | Question | Code | Live Link |
 |----------|------|-----------|
 | Question 1 | [Code](Assignment-1/Asg1Ex1.html) | [Live Link](https://your-live-link.com/question1) |
-| Question 2 | [Code](Assignment-1/Asg1Ex1.html) | [Live Link](https://your-live-link.com/question2) |
-| Question 3 | [Code](Assignment-1/Asg1Ex1.html) | [Live Link](https://your-live-link.com/question3) |
-| Question 4 | [Code](Assignment-1/Asg1Ex1.html) | [Live Link](https://your-live-link.com/question4) |
-| Question 5 | [Code](Assignment-1/Asg1Ex1.html) | [Live Link](https://your-live-link.com/question5) |
+| Question 2 | [Code](Assignment-1/Asg1Ex2.html) | [Live Link](https://your-live-link.com/question2) |
+| Question 3 | [Code](Assignment-1/Asg1Ex3.html) | [Live Link](https://your-live-link.com/question3) |
+| Question 4 | [Code](Assignment-1/Asg1Ex4.html) | [Live Link](https://your-live-link.com/question4) |
+| Question 5 | [Code](Assignment-1/Asg1Ex5.html) | [Live Link](https://your-live-link.com/question5) |
+| Question 6 | [Code](Assignment-1/Asg1Ex6.html) | [Live Link](https://your-live-link.com/question5) |
+| Question 7 | [Code](Assignment-1/Asg1Ex7.html) | [Live Link](https://your-live-link.com/question5) |
+| Question 8 | [Code](Assignment-1/Asg1Ex8.html) | [Live Link](https://your-live-link.com/question5) |
+| Question 9 | [Code](Assignment-1/Asg1Ex9.html) | [Live Link](https://your-live-link.com/question5) |
 
 ## How to Use
 
