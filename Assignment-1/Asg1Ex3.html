@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Asignment-1 Ex-3 </title>
+		<style>
+			div{
+				color:blue;
+				border:1px;
+			}
+			table,th,td{
+				border:1px solid;
+			}
+			section{
+				margin:0px 20px 0px 20px;
+		
+			}
+		</style>
+	</head>
+	<body>
+	<center>
+		<h1>List tags of HTML </h1>
+	</center>
+	<section>
+		<h2>Order List</h2>
+		<h3>Create the Order list </h3>
+		<h5>Syntax:</h5>
+		<div> <pre> &ltol&gt &ltli&gt "item" &lt/li&gt &lt/ol&gt</pre></div>
+		<h5>Output:</h5>
+		<ol>
+			<li>Pune</li>
+			<li>Mumbai</li>
+			<li>Nashik</li>
+		</ol>
+		<hr>
+
+		<h3>Changing the number of order list using start</h3>
+		<h5>Syntax:</h5>
+		<div> <pre> &ltol start="4" &gt &lt/ol&gt </pre></div>
+		<h5>Output:</h5>
+		<ol start="4">
+			<li>Pune</li>
+			<li>Mumbai</li>
+			<li>Nashik</li>
+		</ol>
+		<hr>
+		
+		<h3>Reverse the numbering by adding the reversed in ol element</h3>
+		<h5>Syntax:</h5>
+		<div> <pre> &ltol reversed &gt &lt/ol&gt </pre></div>
+		<h5>Output:</h5>
+		<ol reversed>
+			<li>Pune</li>
+			<li>Mumbai</li>
+			<li>Nashik</li>
+		</ol>
+		<hr>
+
+		<h3>Changing the type of numeral</h3>
+		<table>	
+			<tr>
+				<th>Type</th>
+				<th>Description</th>
+				<th>Example</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Default value-Decimal numbes</td>
+				<td>1,2,3</td>
+			</tr>
+			<tr>
+				<td>a</td>
+				<td>Alphabetically ordered(lowercase)</td>
+				<td>a,b,c,d,e</td>
+			</tr>
+
+			<tr>
+				<td>A</td>
+				<td>Alphabetically ordered(uppercase)</td>
+				<td>A,B,C</td>
+			</tr>
+
+			<tr>
+				<td>i</td>
+				<td>Roman Numberal(lowercase)</td>
+				<td>i,ii,iii,iv</td>
+			</tr>
+			<tr>
+				<td>I</td>
+				<td>Roman Numberal(Uppercase)</td>
+				<td>I,II,III,IV</td>
+			</tr>
+
+
+		</table>
+		<h5>Syntax:</h5>
+		<div>  <pre> &ltol type="1|a|A|i|I" &gt &lt/ol&gt </pre> </div>
+		<h5>Output for  type ='a':</h5>
+		<ol type='a'>
+			<li>Pune</li>
+			<li>Mumbai</li>
+			<li>Nashik</li>
+		</ol>
+		<h5>Output for  type ='A':</h5>
+		<ol type='A'>
+			<li>Pune</li>
+			<li>Mumbai</li>
+			<li>Nashik</li>
+		</ol>
+		<h5>Output for  type ='i':</h5>
+		<ol type='i'>
+			<li>Pune</li>
+			<li>Mumbai</li>
+			<li>Nashik</li>
+		</ol>
+		<h5>Output for  type ='I':</h5>
+		<ol type='I'>
+			<li>Pune</li>
+			<li>Mumbai</li>
+			<li>Nashik</li>
+		</ol>
+
+		<hr>
+		<h2>Unordered List</h2>
+		<h3>Create the Unordered list </h3>
+		<h5>Syntax:</h5>
+		<div> <pre> &ltul&gt &ltli&gt "item" &lt/li&gt &lt/ul&gt</pre></div>
+		<h5>Output:</h5>
+		<ul>
+			<li>Pune</li>
+			<li>Mumbai</li>
+			<li>Nashik</li>
+		</ul>
+		<hr>
+		
+		<h2>NestedList List</h2>
+		<h3>Create the NestedList list </h3>
+		<h5>Syntax:</h5>
+		<div>
+		 <pre> &ltul&gt
+	&ltli&gt "item1" &lt/li&gt <br>          &ltul&gt &ltli&gt "item2" &lt/li&gt &lt/ul&gt <br> &lt/ul&gt</pre></div>
+		<h5>Output:</h5>
+		<ul>
+			<li>Pune</li>
+				<ul>	
+					<li>Kothrud</li>
+					<li>Deccan Corner</li>
+					<li>Shivaji Nagar</li>
+				</ul>
+			<li>Mumbai</li>
+			<li>Nashik</li>
+		</ul>
+		<hr>
+
+		<h2>Description List</h2>
+		<h3>Create the Description list </h3>
+		<h5>Syntax:</h5>
+		<div> <pre> &ltdl&gt 
+	&ltdt&gt "item" &lt/dt&gt		
+        &ltdt&gt "item" &lt/dt&gt	
+&lt/dl&gt</pre></div>
+		<h5>Output:</h5>
+		<dl>
+			<dt>Football</dt>
+			<dd>Football required 11 players for playing</dd>
+			<dt>Chess</dt>
+			<dd>Chess required 2 players for playing</dd>
+		</dl>
+		<hr>
+		</section>
+	
+
+
+
+			
+
+	
+	</body>
+
+</html>
