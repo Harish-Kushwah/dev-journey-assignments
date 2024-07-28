@@ -16,6 +16,7 @@ Welcome to the Dev Journey Assignments repository! Here, you will find a collect
 | Question 7 | [Code](Assignment-1/Asg1Ex7.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex7.html) |
 | Question 8 | [Code](Assignment-1/Asg1Ex8.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex8.html) |
 | Question 9 | [Code](Assignment-1/Asg1Ex9.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex9.html) |
+| Question 11 | [Code](Assignment-1/college/home.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/college/home.html) |
 
 ## How to Use
 

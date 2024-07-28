@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ferguson College</title>
+	</head>
+	<style>
+		*{
+			margin:0px;
+			padding:0px;
+			display:box;
+		}
+		nav{
+			padding:10px;
+			background-image: linear-gradient(to right, rgba(15, 167, 209,0.5) 40% , rgba(221, 236, 240,0.5));
+
+
+		}
+		nav,.nav-items{
+			display:flex;
+			justify-content:space-between;
+			flex-direction:row;	
+				
+		}
+		.nav-items{
+			align-items:center;
+		}
+		.nav-items li{
+			margin-right:10px;
+			font-size:18px;
+			
+		}
+		li a{
+			color:black;
+		}
+		li{
+			list-style:none;
+			color:red;
+		}
+		a{
+			text-decoration:none;
+		}
+
+		footer p{
+			border-top:1px solid black;
+		}
+		.banner{
+			//opacity: 0.3;
+			//background-image:url(images/logo.png);
+			background-image: linear-gradient(to right, rgba(190, 227, 237,0.5) 40% , white);
+			//background-position: center center;
+			//background-repeat: no-repeat;
+			//background-attachment: fixed;
+			//background-size: cover;
+			display:flex;
+			align-items:flex-start;
+			justify-content:flex-start;	
+			flex-direction:row;
+			align-items:center;
+			height:30vh;
+			
+		
+		}
+		.college-info{
+			display:flex;
+			align-items:flex-start;
+			justify-content:center;	
+			flex-direction:column;
+			color:black;
+			height:100%;
+			margin-left:10px;
+			
+		}
+		#title{
+			font-size:22px;
+			font-weight:700;
+		}
+		#sub-title{
+			font-size:16px;
+		}
+		#main-title{
+			font-size:18px;
+		}	
+		#address-title{
+			font-size:14px;
+		}
+		marquee{
+			font-weight:800;
+		}
+		.gallery{  
+			border:1px solid  rgb(15, 167, 209);
+			padding:10px;
+			border-radius:5px;
+			margin-top:10px;
+
+		}
+		.gallery tr,td{
+			margin:20px;
+			
+		}
+		.gallery td{
+			border-radius:10px;
+		}
+		.gallery img{
+			border:0px solid  rgb(15, 167, 209);
+			width:150px;
+			height:150px;
+			border-radius:5px;
+			overflow:true;
+
+		}
+		.gallary-box{
+			padding:10px;
+			
+		}
+			</style>
+	<body>
+		<header>
+		<nav>
+			<ul class="logo">
+				<li><img src="./images/logo.png" alt="logo" height=50 width=50></li>
+			</ul>
+			<ul class="nav-items">
+				<li><a href="academics">Home</a></li>
+				<li><a href="academics">Academics</a></li>
+				<li><a href="academics">Admission</a></li>
+				<li><a href="academics">Gallery</a></li>	
+			</ul>
+		</nav>
+		<div class="banner">
+				<img src="./images/logo.png" alt="logo">
+				<div class="college-info">
+				<p id="main-title">Deccan Education Society's
+				<p id="title">Fergusson College<br>
+				(Autonomous)</p>
+				<p id="sub-title"> Affiliated to Savitribai Phule Pune University
+				NAAC accredited “A+” Grade (3.31 CGPA) <br>
+				AISHE Code : C - 41431
+				UGC Special Heritage Status |<br>
+				UGC - College of Excellence (CE) |<br> 
+				DBT - STAR Status</p>
+				<p id="address-title">#F. C. Road, Shivaji Nagar, Pune - 411004</p>
+			</div>
+		</div>
+		</header>
+
+  		<marquee>Notice of Today's Supplementary Examination.....    Walk-in on 26th July Fergusson College (Autonomous), Junior College Wing.....      Post Graduate Certificate Course in Counselling Psychology Admissions..... Foundation Course in Industrial Bioinformatics.....       Certificate Course in Intellectual Property Rights.....     Advanced Certificate Course in International Relations & Geo-Economics.....</marquee>
+
+		<section>
+			<article class="gallary-box">
+				<h2>Photo Gallary</h2>
+				<table class="gallery">	
+					<tr>
+						<td> <img src="./images/main_building.jpeg" alt="main_building" ></td>
+						<td>  <img src="./images/main_building1.jpg" alt="main_building" ></td>
+						<td>  <img src="./images/main_building2.jpg" alt="main_building" ></td>
+
+					</tr>
+					<tr>
+						<td>  <img src="./images/main_building1.jpg" alt="main_building" ></td>
+						<td>  <img src="./images/main_building.jpeg" alt="main_building" ></td>
+						<td>  <img src="./images/main_building.jpeg" alt="main_building" ></td>
+					</tr>
+					<tr>
+						<td>  <img src="./images/main_building1.jpg" alt="main_building" ></td>
+						<td>  <img src="./images/main_building.jpeg" alt="main_building" ></td>
+						<td>  <img src="./images/main_building.jpeg" alt="main_building" ></td>
+					</tr>
+
+
+				</table>				
+			</article>
+		</section>
+		<aside>
+			<ul>
+				<li> Department of Chemistry (Biochemistry Division) National Science Day Report and the magazine CHIASMA - 2024</li>
+			</ul>
+		</aside>
+			
+		
+		<footer>
+			<center>
+				<p>&copy 2023-24 all rights reserved </p>
+			</center>
+		<footer>
+	</body>
+</html>
