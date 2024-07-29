@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Admission Form</title>
+		<style>
+		form{
+			display:flex;
+			align-items:center;
+			flex-direction:column;
+			border:2px solid blue;
+			
+			border-radius:20px;
+			max-width:800px;
+		}
+		.form-group{
+			display:flex;
+			align-items:flex-start;
+			flex-direction:column;
+			margin-top:15px;
+			
+		}
+		input{			
+			height:25px;
+		}
+		.form-group1{	
+			display:flex;
+			flex-direction:row;
+			justify-content:space-between;
+			
+		}
+		.form-group1 .form-group{
+			width:100%;
+		}
+		.form-group1 input{
+			width:95%;		
+		}
+		textarea{
+		 width:100%;
+		 height:100px;
+		}
+		.gender-group{
+			display:flex;
+			flex-direction:row;
+			
+				
+		}
+		.gender-group label{
+			margin-top:5px;
+		}
+		.btn-group{
+			margin:15px;
+		}
+		button{
+			height:30px;
+			width:70px;
+			cursor:pointer;
+			border:0px solid white;
+			border-radius:5px;
+			color:white;
+		}
+		#submit{
+			background-color:blue;
+			
+		}
+		#reset{
+			background-color:green;
+
+		}
+		</style>
+	</head>
+	<body>
+		<center>
+			<h1>Admission Form </h1>
+		
+		<form>
+			<div class="form-group">
+				<label>Full Name </label>
+				<div class="input-group">
+				<input type="text" placeholder="First Name">
+				<input type="text" placeholder="Middle Name">
+				<input type="text" placeholder="Last Name">
+				<div>
+			</div>
+			
+
+			<div class="form-group1">
+				<div class="form-group">	
+		       			<label>Phone Number :</label>
+					<input type="text" placeholder="(+91) 1234567890">
+				</div>
+
+				<div class="form-group">
+	              	       		<label>Email :</label>
+					<input type="email" placeholder="abc@gmail.com">
+				</div>
+			</div>
+			<div class="form-group1">
+				<div class="form-group">	
+		       			<label>Gender</label>
+					<div class="gender-group">
+						<input type="radio" value="Male" name="gender">
+						<label>Male</label>
+					
+						<input type="radio" value="Female" name="gender">
+						<label>Female</label>
+					</div>
+
+				</div>
+				<div class="form-group">
+	              	       		<label>DOB :</label>
+					<input type="date">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label>Address:</label>
+				<textarea placeholder="Enter Addres"></textarea>
+			</div>
+
+			
+			<div class="btn-group">
+				<button type="submit" id="submit">Submit</button>	
+				<button type="reset" id="reset">reset</button>	
+			</div>
+		
+		 </form>
+</center>
+	</body>
+</html>
