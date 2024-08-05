@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Assignments</title>
         <style>
             th,tr,td{
@@ -10,10 +11,28 @@
             a{
                 text-decoration: none;
             }
+            .tables{
+                display: flex;
+                align-items: flex-start;
+                
+            }
+            table{
+                margin: 10px;
+            }
+            @media only screen and (max-width: 600px) {
+                .tables{
+                    flex-direction: column;
+                    align-items: center;
+                }
+                h1{
+                    text-align: center;
+                }
+              }
         </style>
     </head>   
     <body>
         <h1>View All Assignments</h1>
+        <div class="tables">
         <table border="1px">
             <caption>Assignment-1</caption>
             <thead>
@@ -75,6 +94,36 @@
 
             </tbody>
         </table>
+        <table border="1px">
+            <caption>Assignment-1a</caption>
+            <thead>
+                <th>Question</th>
+                <th>Code</th>
+                <th>Live Demo</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Question-1</td>
+                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1a/Asg1aEx1.html">Code</a></td>
+                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1a/Asg1aEx1.html">View</a></td>
+                </tr>
+                <tr>
+                    <td>Question-2</td>
+                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1a/Asg1aEx2a.html">Code</a></td>
+                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1a/Asg1aEx2a.html">View</a></td>
+                </tr>
+                <tr>
+                    <td>Question-3</td>
+                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1a/Asg1aEx3.html">Code</a></td>
+                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1a/Asg1aEx3.html">View</a></td>
+                </tr>
+                
+
+            </tbody>
+        </table>
+
+        </div>
+
     </body>
     
 </html>

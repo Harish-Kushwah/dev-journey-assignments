@@ -1,0 +1,32 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Assignment 2 Ex2 A</title>
+	</head>
+	<body>
+		<button id="location">Where i am ?</button>
+		<br>
+		<label id="pos"></label>
+
+		<script>
+			var x  = document.getElementById("location");
+			var pos = document.getElementById("pos");
+			
+			x.addEventListener("click",function geLocation(){
+				if(navigator.geolocation){
+					navigator.geolocation.getCurrentPosition(showPosition);
+				}
+				else{
+					alert("Geolocation is not supporting");
+				}
+				
+			});
+
+			function showPosition(position){
+				pos.innerText = "Your Current Location is " +" Latitude :" + position.coords.latitude + " Longitude :" + position.coords.longitude;
+			}
+			
+		</script>
+	</body>
+</html>
