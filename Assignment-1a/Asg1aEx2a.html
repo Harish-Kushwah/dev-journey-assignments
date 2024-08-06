@@ -1,32 +1,77 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Assignment 2 Ex2 A</title>
-	</head>
-	<body>
-		<button id="location">Where i am ?</button>
-		<br>
-		<label id="pos"></label>
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 2 Ex2 A</title>
+  </head>
+  <body>
+    <h1>Geolocation Example</h1>
+    <button id="location">Where i am ?</button>
+    <br />
+    <label id="pos"></label>
 
-		<script>
-			var x  = document.getElementById("location");
-			var pos = document.getElementById("pos");
-			
-			x.addEventListener("click",function geLocation(){
-				if(navigator.geolocation){
-					navigator.geolocation.getCurrentPosition(showPosition);
-				}
-				else{
-					alert("Geolocation is not supporting");
-				}
-				
-			});
+    <hr />
+    <h1>Canvas Example</h1>
 
-			function showPosition(position){
-				pos.innerText = "Your Current Location is " +" Latitude :" + position.coords.latitude + " Longitude :" + position.coords.longitude;
-			}
-			
-		</script>
-	</body>
+    <canvas
+      id="canvas"
+      style="width: 400px; height: 400px; border: 1px solid black"
+    ></canvas>
+    <script>
+      var x = document.getElementById("location");
+      var pos = document.getElementById("pos");
+
+      x.addEventListener("click", function geLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          alert("Geolocation is not supporting");
+        }
+      });
+
+      function showPosition(position) {
+        pos.innerText =
+          "Your Current Location is " +
+          " Latitude :" +
+          position.coords.latitude +
+          " Longitude :" +
+          position.coords.longitude;
+      }
+
+      var canvas = document.getElementById("canvas");
+      var context = canvas.getContext("2d");
+ 
+
+      make_base();
+
+      function make_base() {
+        base_image = new Image();
+        base_image.src = "../Assignment-1/images/img1.jpg";
+		base_image.onload = function(){
+        context.drawImage(base_image, 0, 0);
+		}
+      }
+    </script>
+
+	<hr>
+	<h1>SVG Example</h1>
+	<svg width="400" height="100">
+		<circle cx="50" cy="50" r="30" fill="green"/>
+	</svg>
+	<svg width="400" height="100">
+		<rect width="200" height="100" x="10" y="10" rx="10" fill="blue"/>
+	</svg>
+	<svg width="400" height="300">
+		<polygon points="100,10 40,198 190,78 10,78 169,198" fill="green" style="fill:line;stroke-width:5"/>
+	</svg>
+
+	<hr>
+	<h1>Audio ,Video Example</h1>
+	<audio controls>
+		<source src="/assests/music.mp3" type="audio/mp3">
+	</audio>
+	<video controls width="400" height="300"> 
+		<source src="/assests/hackerRankeJavaFiveStar.mp4" type="video/mp4">
+	</video>
+  </body>
 </html>
