@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>Geolocation Example</h1>
-    <button id="location">Where i am ?</button>
+    <button onclick="getLocation()">Where i am ?</button>
     <br />
     <label id="pos"></label>
 
@@ -21,13 +21,13 @@
       var x = document.getElementById("location");
       var pos = document.getElementById("pos");
 
-      x.addEventListener("click", function geLocation() {
+      function getLocation() {
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(showPosition);
         } else {
           alert("Geolocation is not supporting");
         }
-      });
+      }
 
       function showPosition(position) {
         pos.innerText =

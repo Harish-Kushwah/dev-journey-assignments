@@ -3,37 +3,107 @@
 	<head>
 	   <meta charset="utf-8">
 	   <title>Assignment 2 Ex1</title>
+	   <style>
+		form{
+			border: 1px solid black;
+			width: 70%;
+			border-radius: 5px;
+			border: 2px rgb(37, 37, 237);
+			border-style:outset;
+		}
+		.form-fields{
+			margin: 10px;
+		}
+		.form-fields input,select{
+			margin: 5px;
+			height: 25px;
+			border-radius: 5px;
+		}
+		#employee-status{
+			width:100px;
+		}
+		.btn {
+			padding: 10px;			
+		}
+		.common-btn{
+			width: 70px;
+			height: 30px;
+			color: white;
+			border: 0px;
+			border-radius:5px;
+			cursor: pointer;
+		}
+		.btn #submit{
+			background-color: rgb(48, 48, 226);
+		}
+		#submit:hover{
+			background-color:rgb(29, 29, 200) ;
+		}
+		
+		.btn #reset{
+			background-color: green;
+			color: white;
+		}
+		#reset:hover{
+			background-color: rgb(1, 99, 1);
+
+		}
+		.gender{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		#designation{
+			width: 40px;
+		}
+
+	   </style>
 	</head>
 	<body>
+		<center>
+			<h1>Html Form</h1>
 		<form>
-			Title:
-			<select>
+			<div class="form-fields">
+				Name:
+			<select id="designation">
 				<option>Mr.</option>
 				<option>Mrs.</option>
 				<option>Miss.</option>
 				<option>Dr.</option>
 			</select>
-			<input type="text">
+			<input type="text" placeholder="Enter name">
 			<br>
-			Age:<input type="number" min=20 max=45>
-
+			Email:
+			<input type="text" placeholder="Enter Email">
 			<br>
-			Male<input type="radio" name="gender">
-			Female<input type="radio" name="gender">
-
-			<br>
+			
+		 <div>	
 			Status:
-			<select>
+			<select id="employee-status">
 				<option>Employed</option>
 				<option>Unemployed</option>
 				<option>Student</option>
 			</select>
-			
-			<br>
+			Age:<input type="number" min=20 max=45 placeholder="Select age">
+
+		  </div>		
+
+			<div class="gender">
+			 Gender:
+			 <input type="radio" name="gender">Male
+			 <input type="radio" name="gender">Female
+			</div>
+
 			DOB:
 			<input type="date">
+			</div>
+			<div class="btn">
+			<input type="submit" id="submit" class="common-btn">
+			<input type="reset" id="reset" class="common-btn">
+			</div>
 			
 		</form>
+		</center>
 		
 	</body>
 </html>

@@ -22,17 +22,14 @@
 		<div id="box" ondrop="drop(event)" ondragover="allowDrop(event)">
 		</div>
 
-		<img src="../Assignment-1/images/img1.jpg"id="image" draggable="true" ondragstart="drag(event)">
-		</img>
+		<img src="../Assignment-1/images/img1.jpg" id="image" draggable="true" ondragstart="drag(event)"/>
 
 		<script>
 			function allowDrop(event){
 				event.preventDefault();
 			}
 			function drop(event){
-				event.preventDefault();
-				var data = event.dataTransfer.getData("text");
-				event.target.appendChild(document.getElementById(data));
+				event.target.appendChild(document.getElementById("image"));
 			}
 			function drag(event){
 				event.dataTransfer.setData("text",event.target.id);
