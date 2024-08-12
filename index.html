@@ -11,6 +11,11 @@
             a{
                 text-decoration: none;
             }
+            .container{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+            }
             .tables{
                 display: flex;
                 align-items: flex-start;
@@ -18,9 +23,10 @@
             }
             table{
                 margin: 10px;
+                margin-top: 0px;
             }
             @media only screen and (max-width: 600px) {
-                .tables{
+                .tables,.container{
                     flex-direction: column;
                     align-items: center;
                 }
@@ -32,6 +38,8 @@
     </head>   
     <body>
         <h1>View All Assignments</h1>
+        <div class="container">
+        <h3>Full Stack UI</h3>
         <div class="tables">
         <table border="1px">
             <caption>Assignment-1</caption>
@@ -93,7 +101,7 @@
                 </tr>
 
             </tbody>
-        </table>
+        </table>    
         <table border="1px">
             <caption>Assignment-1a</caption>
             <thead>
@@ -121,7 +129,50 @@
 
             </tbody>
         </table>
+        </div>
 
+        </div>
+        <hr>
+        <div class="container">
+            <h3>Analysis of Algorithm and Computing</h3>
+            <table border="1px">
+                <caption>Assignment-1a</caption>
+                <thead>
+                    <th>Date</th>
+                    <th>Question</th>
+                    <th>Code</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">18/07/2024</td>
+                        <td>Question-1</td>
+                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/18-07-24/Ex1.cpp">Code</a></td>
+                    </tr>
+                    <tr>
+                        <td>Question-2</td>
+                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/18-07-24/Ex2.cpp">Code</a></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">19/07/2024</td>
+                        <td>Question-1</td>
+                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/19-07-24/Ex1.cpp">Code</a></td>
+                    </tr>
+                    <tr>
+                        <td>Question-2</td>
+                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/19-07-24/Ex2.cpp">Code</a></td>
+                    </tr>
+                    <tr>
+                        <td>Question-3</td>
+                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/19-07-24/Ex3.cpp">Code</a></td>
+                    </tr>
+                    <tr>
+                        <td>Question-4</td>
+                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/19-07-24/Ex4.cpp">Code</a></td>
+                    </tr>
+                    
+    
+                </tbody>
+            </table>
         </div>
 
     </body>
