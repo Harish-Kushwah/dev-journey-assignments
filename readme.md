@@ -8,7 +8,7 @@ Welcome to the Dev Journey Assignments repository! Here, you will find a collect
 | Question | Code | Live Link |
 |----------|------|-----------|
 | Question 1 | [Code](Assignment-1/Asg1Ex1.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex1.html) |
-| Question 2 | [Code](Assignment-1/Asg1Ex2.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex2.html) |
+| Question 2 | [Code](Assignment-1a/Asg1aEx1.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1a/Asg1aEx1.html) |
 | Question 3 | [Code](Assignment-1/Asg1Ex3.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex3.html) |
 | Question 4 | [Code](Assignment-1/Asg1Ex4.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex4.html) |
 | Question 5 | [Code](Assignment-1/Asg1Ex5.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex5.html) |
@@ -17,6 +17,13 @@ Welcome to the Dev Journey Assignments repository! Here, you will find a collect
 | Question 8 | [Code](Assignment-1/Asg1Ex8.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex8.html) |
 | Question 9 | [Code](Assignment-1/Asg1Ex9.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex9.html) |
 | Question 11 | [Code](Assignment-1/college/home.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/college/home.html) |
+
+##### Assignment-1a
+| Question | Code | Live Link |
+|----------|------|-----------|
+| Question 1 | [Code](Assignment-1a/Asg1aEx1.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1a/Asg1aEx1.html) |
+| Question 2 | [Code](Assignment-1a/Asg1aEx2a.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1a/Asg1aEx2a.html) |
+| Question 3 | [Code](Assignment-1a/Asg1aEx3.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1a/Asg1aEx3.html) |
 
 ## How to Use
 
