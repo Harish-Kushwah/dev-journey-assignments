@@ -3,14 +3,14 @@
 //2.Write a program to print max of three numbers.
 
 int max(int a,int b,int c){
-    if(a>b&&b>c) return a;
+    if(a>b&&a>c) return a;
     if(b>c) return b;
     return c;
 }
 
 //using the ternary operators
 int max1(int a,int b,int c){
-    return (a>b&&b>c)?a:(b>c)?b:c;
+    return (a>b&&a>c)?a:(b>c)?b:c;
 }
 int main(){
     int a,b,c;

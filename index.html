@@ -5,6 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Assignments</title>
         <style>
+           *{
+            margin: 0px;
+           }
+           body{
+            background-color: rgb(251, 251, 251);
+           }
+           table,th,tr,td{
+                border:1px solid rgb(0, 0, 0);
+           }
             th,tr,td{
                 padding: 5px;
             }
@@ -15,6 +24,7 @@
                 display: flex;
                 align-items: flex-start;
                 flex-direction: column;
+                padding: 10px;
             }
             .tables{
                 display: flex;
@@ -25,10 +35,48 @@
                 margin: 10px;
                 margin-top: 0px;
             }
+            .footer-text {
+                text-align: center;
+                font-weight: 400;
+                font-family: "Google Sans Regular";
+                background-image: linear-gradient(to left,rgb(226, 236, 242),rgb(150, 191, 244),rgb(195, 235, 243),rgb(226, 236, 242));
+                padding: 10px;
+            }
+            .footer-text a{
+                 color: black;
+            }
+ 
+            .footer-div {
+                margin-top: 2rem;
+
+            }  
+            .title{
+                font-size: 2rem;
+                margin: 0px;
+                margin-bottom:10px;
+                text-align: center;
+                padding: 10px;
+                background-image: linear-gradient(to left,rgb(226, 236, 242),rgb(150, 191, 244),rgb(195, 235, 243),rgb(226, 236, 242));
+                font-weight: 500;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+            }
+            .sub-title{
+                margin-bottom:10px;
+                font-family:sans-serif;
+                font-weight: 500;
+            }
+              
             @media only screen and (max-width: 600px) {
                 .tables,.container{
                     flex-direction: column;
                     align-items: center;
+                   
+                }
+                .tables{
+                    width:100%;
+                }
+                table{
+                    width: 90%;
                 }
                 h1{
                     text-align: center;
@@ -37,12 +85,12 @@
         </style>
     </head>   
     <body>
-        <h1>View All Assignments</h1>
+        <p class="title"> 🎲 MSc(Computer Science) Assignments 🧑‍💻 </p>
         <div class="container">
-        <h3>Full Stack UI</h3>
+        <h3 class="sub-title">Full Stack UI 🌐</h3>
         <div class="tables">
-        <table border="1px">
-            <caption>Assignment-1</caption>
+        <table >
+            <caption>Assignment-1(Lecture)</caption>
             <thead>
                 <th>Question</th>
                 <th>Code</th>
@@ -102,8 +150,8 @@
 
             </tbody>
         </table>    
-        <table border="1px">
-            <caption>Assignment-1a</caption>
+        <table >
+            <caption>Assignment-1(Lab)</caption>
             <thead>
                 <th>Question</th>
                 <th>Code</th>
@@ -134,9 +182,9 @@
         </div>
         <hr>
         <div class="container">
-            <h3>Analysis of Algorithm and Computing</h3>
-            <table border="1px">
-                <caption>Assignment-1a</caption>
+            <h3 class="sub-title">Analysis of Algorithm and Computing 💻</h3>
+            <table >
+                <caption>Assignment-1(Lab)</caption>
                 <thead>
                     <th>Date</th>
                     <th>Question</th>
@@ -174,6 +222,13 @@
                 </tbody>
             </table>
         </div>
+
+
+        <footer>
+        <div className="footer-div">
+            <p class="footer-text"> Made with ❤️ Harish-Kushwah <a href="https://github.com/Harish-Kushwah/dev-journey-assignments" alt="github link"> ⭐ Star Me On Github </a></p>
+        </div>
+        </footer>
 
     </body>
     
