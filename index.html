@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Assignments</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <style>
            *{
             margin: 0px;
@@ -67,6 +68,13 @@
                 font-family:sans-serif;
                 font-weight: 500;
             }
+
+            #dice{
+                display: inline-block;
+                margin: 0 0.5rem;
+                animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; 
+            }
               
             @media only screen and (max-width: 600px) {
                 .tables,.container{
@@ -83,12 +91,15 @@
                 h1{
                     text-align: center;
                 }
+                .title{
+                    font-size: 1.8rem;
+                }
               }
         </style>
     </head>   
     <body>
-        <p class="title"> 🎲 MSc(CS) Assignments 🧑‍💻 </p>
-        <div class="container">
+        <p class="title"> <span id="dice" class="animate__animated animate__infinite infinite animate__bounce   animate__fast 800ms" >🎲</span>MSc(CS) Assignments 🧑‍💻 </p>
+        <div class="container" >
         <h3 class="sub-title">Full Stack UI 🌐</h3>
         <div class="tables">
         <table >
