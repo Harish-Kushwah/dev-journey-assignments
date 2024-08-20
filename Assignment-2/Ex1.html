@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-2 Ex1</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .product {
+        display: flex;
+        border: 1px solid rgb(35, 23, 195);
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 10px;
+        width: 50%;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px gray;
+      }
+      button {
+        cursor: pointer;
+        width: 100px;
+        height: 30px;
+        color: white;
+        background-color: rgb(4, 4, 180);
+        border: 0px;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: rgb(19, 19, 212);
+        transition: 0.5s;
+      }
+      .buy-btn{
+        background-color: rgb(27, 168, 27);
+      }
+      .buy-btn:hover{
+         background-color: rgb(17, 145, 17);
+
+      }
+      .product-des {
+        padding: 10px;
+        overflow: auto;
+        width: 500px;
+        margin-left: 10px;
+      }
+      .product-des-head {
+        font-weight: 400;
+      }
+      .product-name {
+        font-weight: 600;
+        font-size: 19px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 5px;
+      }
+      .product-brand {
+        font-style: italic;
+        font-size: 14px;
+        margin-top: 0px;
+
+      }
+      .product-img {
+        margin: 5px;
+      }
+      .product-img img{
+        width: 200px;
+        height: 200px;
+        margin-right: 20px;
+      }
+      .product:hover {
+        box-shadow: 5px 5px 10px gray;
+        transition: 1s;
+      }
+      span{
+        font-weight: bold;
+      }
+     
+      @media only screen and (max-width: 600px) {
+        .product {
+          width: 100%;
+          align-items: center;
+        }
+        .product-img img{
+            width: 100px;
+            height: 100px;
+        }
+      }
+      @media only screen and (max-width: 800px) {
+        .product {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Product Details</h1>
+    <div class="container">
+      <div class="product">
+        <div class="product-img">
+          <img src="./images/img1.png" alt="product image" />
+        </div>
+        <div class="product-des">
+          <div class="product-des-head">
+            <p class="product-name">Wireless Bluetooth Headphones</p>
+            <p class="product-brand">SoundWave</p>
+          </div>
+          <button onclick="addDetails(this)" id="p1">Know More</button>
+          <button  class="buy-btn">Buy Now</button>
+
+          <p id="p1-details"></p>
+
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-img">
+          <img src="./images/img2.jpg"  alt="product image" />
+        </div>
+
+        <div class="product-des">
+          <div class="product-des-head">
+            <p class="product-name">Smart Fitness Tracker</p>
+            <p class="product-brand">FitPulse</p>
+          </div>
+          <button onclick="addDetails(this)" id="p2">Know More</button>
+          <button  class="buy-btn">Buy Now</button>
+          <p id="p2-details"></p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-img">
+          <img src="./images/img3.jpg" alt="product image" />
+        </div>
+        <div class="product-des">
+          <div class="product-des-head">
+            <p class="product-name">4K Ultra HD Action Camera</p>
+            <p class="product-brand">AdventureCam</p>
+          </div>
+          <button onclick="addDetails(this)" id="p3">Know More</button>
+          <button  class="buy-btn">Buy Now</button>
+          <p id="p3-details"></p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-img">
+          <img src="./images/img4.jpg"  alt="product image" />
+        </div>
+        <div class="product-des">
+          <div class="product-des-head">
+            <p class="product-name">Portable Power Bank</p>
+            <p class="product-brand">ChargePro</p>
+          </div>
+          <button onclick="addDetails(this)" id="p4">Know More</button>
+          <button  class="buy-btn">Buy Now</button>
+          <p id="p4-details"></p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-img">
+          <img src="./images/img5.jpg" alt="product image" />
+        </div>
+        <div class="product-des">
+          <div class="product-des-head">
+            <p class="product-name">Wireless Mouse</p>
+            <p class="product-brand">ComfortTech</p>
+          </div>
+          <button onclick="addDetails(this)" id="p5">Know More</button>
+          <button  class="buy-btn">Buy Now</button>
+          <p id="p5-details"></p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-img">
+          <img src="./images/img6.jpg" alt="product image" />
+        </div>
+        <div class="product-des">
+          <div class="product-des-head">
+            <p class="product-name">Noise-Cancelling Earbuds</p>
+            <p class="product-brand">SilencePro</p>
+          </div>
+          <button onclick="addDetails(this)" id="p6">Know More</button>
+          <button  class="buy-btn">Buy Now</button>
+          <p id="p6-details"></p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-img">
+          <img src="./images/img7.jpg" alt="product image" />
+        </div>
+        <div class="product-des">
+          <div class="product-des-head">
+            <p class="product-name">Smart Home Security Camera</p>
+            <p class="product-brand">SecureView</p>
+          </div>
+          <button onclick="addDetails(this)" id="p7">Know More</button>
+          <button  class="buy-btn">Buy Now</button>
+          <p id="p7-details"></p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var list = {
+        p1: {
+          Description:"Enjoy crystal-clear sound quality with these wireless Bluetooth headphones. With up to 20 hours of battery life, they are perfect for long listening sessions. The ergonomic design ensures a comfortable fit, and the built-in microphone allows for hands-free calls.",
+          Price: "$99.99",
+          Availability: "In stock",
+        },
+        p2: {
+          Description:"Track your daily activities, heart rate, and sleep patterns with this smart fitness tracker. It features a sleek, waterproof design, and a long-lasting battery. Stay connected with notifications for calls, messages, and social media.",
+          Price: "$49.99",
+          Availability: "In stock",
+        },
+        p3: {
+          Description:"Capture every moment in stunning 4K resolution with this ultra HD action camera. It is waterproof up to 30 meters and comes with a variety of mounting accessories. Perfect for extreme sports and outdoor adventures.",
+          Price: "$129.99",
+          Availability: "In stock",
+        },
+        p4: {
+          Description:"Keep your devices charged on the go with this 10,000mAh portable power bank. It features dual USB ports for simultaneous charging and a compact, lightweight design. Ideal for travel and outdoor activities.",
+          Price: "$29.99",
+          Availability: "Out of stock",
+        },
+        p5: {
+          Description:"Reduce strain on your hand and wrist with this wireless ergonomic mouse. It offers customizable buttons, adjustable DPI settings, and a battery life of up to 12 months. Suitable for both work and gaming.",
+          Price: "$39.99",
+          Availability: "In stock",
+        },
+        p6: {
+          Description:"Immerse yourself in music with these noise-cancelling earbuds. They feature active noise cancellation, a comfortable in-ear design, and up to 8 hours of battery life. Comes with a charging case for on-the-go power.",
+          Price: "$79.99",
+          Availability: "In stock",
+        },
+        p7: {
+          Description:"Monitor your home remotely with this smart home security camera. It offers 1080p HD video, night vision, and motion detection. Compatible with Alexa and Google Assistant for voice control.",
+          Price: "$89.99",
+          Availability: "In stock",
+        },
+      };
+      function getDescriptionInList(str){
+        var arr = str.split(".");
+        var li = "<ul>";
+        for(let i = 0; i<arr.length-1;i++){
+            li+="<li>" + arr[i] +"</li>";
+        }
+        li+="</ul>";
+        return li;
+      }
+      function addDetails(event) {
+        var id = event.id;
+        for (let i = 1; i <= Object.keys(list).length; i++) {
+          var element = document.getElementById(id + "-details");
+          if (id == "p" + i) {
+            if (element.innerText.length == 0) {
+
+              element.innerHTML += getDescriptionInList( list[id]["Description"]) +"<br>";
+              element.innerHTML += "<span>Price :</span>" + list[id]["Price"] +"<br>";
+              element.innerHTML += "<span>Availability Status :</span>" + list[id]["Availability"];
+              event.innerText = "Show Less";
+            }
+            else{
+                element.innerHTML="";
+                event.innerText = "Show More"
+            }
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
