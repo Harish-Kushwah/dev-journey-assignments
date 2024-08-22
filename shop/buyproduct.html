@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+    <script src="./js/data.js"></script>
+    <link rel="stylesheet" href="./css/book.css">
+    <link rel="stylesheet" href="./css/buyproduct.css">
+
+</head>
+<body>
+    <h1>Purchase book</h1>
+    <div class="container" id="product-details">
+    </div>
+    <div class="payment-container">
+        <p>Select Payment Mode</p>
+        <div class="payment-section">
+            <div class="card">
+                <img  class="payment-logo" src="./images/card.png" alt="">
+                <p>Card</p>
+            </div>
+            <div class="card">
+                <img class="payment-logo"  src="./images/googlepay.png" alt="">
+                <p>Google Pay</p>
+            </div>
+            <div class="card">
+                <img  class="payment-logo"  src="./images/bank.png" alt="">
+                <p>Bank</p>
+            </div>
+        </div>
+        <div class="selected-payment-mod">
+                <div class="card-payment">
+                    <table>
+                        <thead>
+                      <!-- <th>label</th> -->
+                      <!-- <th>label</th> -->
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label for="">Card Number</label></td>
+                            <td><label for="">CVC</label></td>
+                        </tr>
+                        <tr>
+                            <td> <input type="text" placeholder="1234 3423 1234 1212" id="card-num"></td>
+                            <td> <input type="text" placeholder="123" id="cvv"></td>
+                        </tr>
+                        <tr >
+                              <td colspan="2"><label for="">Card Holder Name</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" placeholder="Pankaj Jadhav"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Expiration Date</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" ><input type="date" ></td>
+                        </tr>
+                        <tr>
+                           
+                            <td><button id="complete-order-btn">Complete Order</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                    
+    
+
+                   
+                </div>
+        </div>
+    </div>
+    <script src="./js/book.js"></script>
+
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        let productContainer = document.getElementById("product-details");
+        const id = urlParams.get('id');
+        addProduct(id,productContainer);
+        addImage("p"+id);
+        addHeadingOfDetails("p" + id);
+        hideBuyButton(id);
+
+        function hideBuyButton(id){
+            var buyButton = document.getElementById(id);
+            buyButton.style.display = "none";
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+    <title>EBook</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="logo"><span>E.</span>Book</div>
+        <div class="links">
+          <div class="">
+            <span><i class="ri-search-line"></i></span>
+          </div>
+
+          <div>Home</div>
+          <div><a href="books.html">Shop</a></div>
+          <div><a href="about.html">About Us</a></div>
+          <div>Contact</div>
+          <div>Login</div>
+          <div>SignUp</div>
+          <div class="shopping__cart">
+            <i class="ri-shopping-cart-line"></i>
+          </div>
+          <div class="menu_bar"><i class="ri-menu-line"></i></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="left">
+          <h1 id="typed-text"></h1>
+          <p>
+            Welcome to Book Haven, your ultimate destination for book lovers!
+            Explore a vast collection of books across all genres, from timeless
+            classics to the latest bestsellers.
+          </p>
+          <div class="btn">
+            <a href="books.html">BUY NOW</a>
+            <a href="#">LEARN MORE</a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="assets/brain.png" alt="book" />
+        </div>
+      </div>
+
+      
+      <div class="footer">
+        <div class="socials">
+          <span><i class="ri-facebook-fill"></i></span>
+          <span><i class="ri-instagram-fill"></i></span>
+          <span><i class="ri-google-fill"></i></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+
+    <script>
+      var typed = new Typed("#typed-text", {
+        strings: [
+          "Discover Your Next Favorite Book Today!",
+          "Dive into a World of Books",
+          "Your Journey to New Stories Begins Here",
+          "Unleash Your Imagination with Our Books",
+          "Discover Stories That Captivate",
+          "Your Ultimate Bookstore Awaits",
+          "Where Every Book Tells a Story",
+        ],
+        typeSpeed: 90,
+        backSpeed: 10,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+.payment-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.payment-section{
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-start;
+    /* height: 200px; */
+    margin-bottom: 0px;
+}
+.card{
+    border: 2px solid rgb(82, 82, 244);
+    border-radius:10px;
+    margin: 3px;
+    padding: 5px;
+    height: 75px;
+    cursor: pointer;
+    font-size: 13px;
+
+}
+.payment-logo{
+    height: 45px;
+    width: 45px;
+}
+.selected-payment-mod{
+    width: 50%;
+    border: 2px solid rgb(82, 82, 244);
+    border-radius:10px;
+    height: 350px;
+    margin-top: 0px;
+}
+table{
+    padding: 10px;
+    width: 100%;
+    padding-top: 30px;
+}
+input{
+    width: 95%;
+    height: 25px;
+    margin: 5px;
+    margin-left: 0px;
+    border-radius: 5px;
+    border: 1px solid rgb(6, 6, 6);
+    padding: 5px;
+
+}
+input:hover{
+    border-color: blue;
+}
+#card-num{
+    width: 90%;
+    /* margin-right: 10px; */
+}
+#cvv{
+    width: 40%;
+    /* margin-left: 10px; */
+
+}
+#complete-order-btn{
+    width: 200px
+}
+td{
+    margin: 5px;
+}
+tr{
+    width: 100%;
+}
+@media (width < 640px) {
+    .selected-payment-mod,.payment-section{
+        width: 100%;
+    }
+  }

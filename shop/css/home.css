@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #37617a;
+  --primary-color-dark: #0d1a20;
+  --secondary-color: rgb(19, 223, 108);
+  --white: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background:linear-gradient(to right bottom ,rgba(0,0,0,0.7),rgba(0,0,0,0.7) 60% ,rgb(12, 3, 41)) , url(../assets/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 1300px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--white);
+  cursor: pointer;
+}
+.logo span{
+  color: var(--secondary-color);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.links div {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--white);
+  cursor: pointer;
+
+  display: inline-block;
+  text-align: center;
+  color: white;
+  background-size: 200%;
+  transition: .7s ease-in-out;
+  padding: 3px;
+  border:10px;
+
+}
+
+.links div:hover {
+  color: var(--secondary-color);
+  color: left;
+
+}
+
+.links div span {
+  font-size: 1.2rem;
+}
+
+.links .shopping__cart {
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: var(--primary-color-dark);
+  background-color: var(--white);
+}
+
+.content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-top: 0px;
+}
+.left {
+  color: white;
+}
+.left h1{
+   font-size: 3rem;
+   margin-bottom: 10px;
+   color: var(--secondary-color);
+}
+.left p{
+  line-height: 30px;
+}
+.left .btn{
+  margin-top: 20px;
+}
+.left a{
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 10px;
+
+  display: inline-block;
+  text-align: center;
+  background: linear-gradient(to left,rgba(0, 0, 0,0) 40%,var(--secondary-color) 100%) right;
+  background-size: 200%;
+  transition: .7s ease-in-out;
+}
+
+.left a:hover{
+  background-position: left;
+  color: rgb(9, 1, 25);
+
+
+}
+
+.image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  max-width: 550px;
+  display: flex;
+  margin: auto;
+}
+
+
+
+
+.footer {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.socials span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials span:hover {
+  color: var(--secondary-color);
+}
+
+.slides {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.slides span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.menu_bar{
+  display: none;
+}
+.menu_bar i{
+  display: none;
+  
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  cursor: pointer;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.about{
+  height: 40vh;
+  background-color: white;
+}
+@media (width < 640px) {
+  .links div:not(.menu_bar) {
+    display: none;
+  }
+  .menu_bar i{
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 20px
+  };
+}
