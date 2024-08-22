@@ -15,7 +15,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background:linear-gradient(to right bottom ,rgba(0,0,0,0.7),rgba(0,0,0,0.7) 60% ,rgb(12, 3, 41)) , url(../assets/bg1.jpg);
+  background:linear-gradient(to right bottom ,rgba(0,0,0,0.7),rgba(0,0,0,0.7) 60% ,rgb(12, 3, 41)) , url(../images/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

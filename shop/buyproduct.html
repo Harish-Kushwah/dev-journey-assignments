@@ -16,26 +16,24 @@
     <div class="payment-container">
         <p>Select Payment Mode</p>
         <div class="payment-section">
-            <div class="card">
+            <div class="card" id="card" onclick="showPaymentMode(this)">
                 <img  class="payment-logo" src="./images/card.png" alt="">
                 <p>Card</p>
             </div>
-            <div class="card">
+            <div class="card" id="upi" onclick="showPaymentMode(this)">
                 <img class="payment-logo"  src="./images/googlepay.png" alt="">
                 <p>Google Pay</p>
             </div>
-            <div class="card">
+            <div class="card" id="bank" onclick="showPaymentMode(this)">
                 <img  class="payment-logo"  src="./images/bank.png" alt="">
                 <p>Bank</p>
             </div>
         </div>
-        <div class="selected-payment-mod">
-                <div class="card-payment">
+        <div class="selected-payment-mod" id="select-payment-mod">
+                <form action="paymentSuccess.html">
+
+                <div class="card-payment " id="card-payment">
                     <table>
-                        <thead>
-                      <!-- <th>label</th> -->
-                      <!-- <th>label</th> -->
-                    </thead>
                     <tbody>
                         <tr>
                             <td><label for="">Card Number</label></td>
@@ -68,6 +66,23 @@
 
                    
                 </div>
+                <div class="upi-payment" id="upi-payment">
+                    <input type="text" placeholder="Enter UIP id">
+                    <button>Pay</button>
+                </div>
+                <div class="bank-payment" id="bank-payment">
+                    <select name="" id="">
+                        <option value="">State Bank Of India</option>
+                        <option value="">HDFC</option>
+                        <option value="">Bank Of Maharashtra</option>
+                        <option value="">Bank Of Baroda</option>
+                        <option value="">Punjab National Bank</option>
+                        <option value="">Canara Bank</option>
+                    </select>
+                    <button>Continue</button>
+               </div>
+            </form>
+
         </div>
     </div>
     <script src="./js/book.js"></script>
@@ -82,10 +97,60 @@
         addHeadingOfDetails("p" + id);
         hideBuyButton(id);
 
+
+        var selectedPaymentMod = document.getElementById("select-payment-mod");
+        var cardPayment = document.getElementById("card-payment");
+        var upiPayment = document.getElementById("upi-payment");
+        var bankPayment = document.getElementById("bank-payment");
+       
+        var card = document.getElementById("card");
+        var upi = document.getElementById("upi");
+        var bank = document.getElementById("bank");
+
+        
         function hideBuyButton(id){
             var buyButton = document.getElementById(id);
             buyButton.style.display = "none";
         }
+
+        function removeActiveClassForCards(){
+            card.classList.remove("active-card");
+            upi.classList.remove("active-card");
+            bank.classList.remove("active-card");
+        }
+
+        function makeDisplayNone(){
+            cardPayment.style.display = "none";
+            upiPayment.style.display = "none";
+            bankPayment.style.display = "none";
+        }
+        makeDisplayNone();
+
+        function showPaymentMode(element){
+            makeDisplayNone();
+            removeActiveClassForCards();
+            var id = element.id;
+            if(id=="card"){
+                cardPayment.style.display = "block";
+                selectedPaymentMod.style.height="350px";
+                element.classList.add("active-card");
+            }
+            else if(id=="upi"){
+                upiPayment.style.display = "block";
+                selectedPaymentMod.style.height="100px";
+                element.classList.add("active-card");
+
+            }
+            else if(id="bank"){
+                bankPayment.style.display = "block";
+                selectedPaymentMod.style.height="100px";
+                element.classList.add("active-card");
+            }
+        }
+        showPaymentMode(card);
+
+
+
 
     </script>
 

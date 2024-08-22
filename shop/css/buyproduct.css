@@ -16,7 +16,7 @@
     margin-bottom: 0px;
 }
 .card{
-    border: 2px solid rgb(82, 82, 244);
+    border: 1px solid rgb(82, 82, 244);
     border-radius:10px;
     margin: 3px;
     padding: 5px;
@@ -31,7 +31,7 @@
 }
 .selected-payment-mod{
     width: 50%;
-    border: 2px solid rgb(82, 82, 244);
+    border: 1px solid rgb(82, 82, 244);
     border-radius:10px;
     height: 350px;
     margin-top: 0px;
@@ -71,6 +71,29 @@ td{
 }
 tr{
     width: 100%;
+}
+.upi-payment{
+    padding: 10px;
+}
+.upi-payment input {
+    width: 80%;
+}
+select{
+    width: 50%;
+    height: 35px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(6, 6, 6);
+    padding: 5px;
+}
+.bank-payment{
+    height: 150px;
+    margin-top: 15px;
+}
+.active-card{
+    background-color: rgb(199, 241, 248);
+    border: 2px solid rgb(82, 82, 244);
+
 }
 @media (width < 640px) {
     .selected-payment-mod,.payment-section{
