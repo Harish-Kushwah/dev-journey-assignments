@@ -77,5 +77,5 @@ function addAllHeadData() {
 }
 
 function purchase(event) {
-    window.location.href = '/buyproduct.html?id=' + event.id;
+    window.location.href = 'buyproduct.html?id=' + event.id;
 }
