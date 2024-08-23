@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        select{
+            height: 28px;
+            cursor: pointer;
+            padding: 5px;
+            border: 1px solid blue;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: 400;
+
+        }
+        
+        p{
+            margin: 10px;
+            font-size: 20px;
+        }
+        .header{
+            text-align: center;
+            animation:blink-animation 2s steps(5,start) infinite;
+            -webkit-animation: blink-animation 2s steps(5,start) infinite;
+        }
+        @keyframes blink-animation{
+            to{
+                visibility: hidden;
+            }
+        }
+        @-webkit-keyframes blink-animation{
+            to{
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Display Capital</h1>
+        </div>
+        <div class="container">
+        <p>Select Country :</p>
+        <select name="" id="country" onchange="showCapital()">
+            <option value="">--Select Country--</option>
+            <option value="Delhi">India</option>
+            <option value="London">United Kingdom</option>
+            <option value="Berlin">Germany</option>
+            <option value="Paris">France</option>
+            <option value="Kiev">Ukraine</option>
+        </select>
+        <p id="capital"> </p>
+        </div>
+
+        <script>
+            function showCapital(){
+                var country = document.getElementById("country");
+                var capital = document.getElementById("capital");
+                if(country.value=="")
+                    capital.innerText="";
+                else
+                    capital.innerText = "Capital :" + country.value;
+            }
+        </script>
+    </header>
+</body>
+</html>
