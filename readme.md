@@ -1,10 +1,15 @@
 # Dev Journey Assignments
+![HTML Badge](https://img.shields.io/badge/HTML-5-orange?logo=html5&logoColor=white)
+![CSS Badge](https://img.shields.io/badge/CSS-3-blue?logo=css3&logoColor=white)
+![JavaScript Badge](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript&logoColor=white)
 
 Welcome to the Dev Journey Assignments repository! Here, you will find a collection of full stack web development assignments from college, complete with accessible code and live links to view the results.
 
+[Visit Website](https://harish-kushwah.github.io/dev-journey-assignments/) 
 
 ## Table of Contents
-##### Assignment-1 [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/) 
+### Full Stack - UI
+##### Assignment-1 
 | Question | Code | Live Link |
 |----------|------|-----------|
 | Question 1 | [Code](Assignment-1/Asg1Ex1.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex1.html) |
