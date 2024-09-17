@@ -1,379 +1,555 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Assignments</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <style>
-           *{
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        * {
             margin: 0px;
-           }
-           body{
+        }
+
+        body {
             background-color: rgb(251, 251, 251);
-           }
-           table,th,tr,td{
-                border:1px solid rgb(0, 0, 0);
-                font-family:sans-serif;
+        }
 
-           }
-            th,tr,td{
-                padding: 5px;
-            }
-            a{
-                text-decoration: none;
-            }
-            .container{
-                display: flex;
-                align-items: flex-start;
+        table,
+        th,
+        tr,
+        td {
+            border: 1px solid rgb(0, 0, 0);
+            font-family: sans-serif;
+
+        }
+
+        th,
+        tr,
+        td {
+            padding: 5px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .tables {
+            display: flex;
+            align-items: flex-start;
+
+        }
+
+        table {
+            margin: 10px;
+            margin-top: 0px;
+        }
+
+        .footer-text {
+            text-align: center;
+            font-weight: 400;
+            font-family: "Google Sans Regular";
+            background-image: linear-gradient(to left, rgb(226, 236, 242), rgb(150, 191, 244), rgb(195, 235, 243), rgb(226, 236, 242));
+            padding: 10px;
+        }
+
+        .footer-text a {
+            color: black;
+        }
+
+        .footer-div {
+            margin-top: 2rem;
+
+        }
+
+        .title {
+            font-size: 2rem;
+            margin: 0px;
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 10px;
+            background-image: linear-gradient(to left, rgb(226, 236, 242), rgb(150, 191, 244), rgb(195, 235, 243), rgb(226, 236, 242));
+            font-weight: 500;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+        .sub-title {
+            margin-bottom: 10px;
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+
+        #dice {
+            display: inline-block;
+            margin: 0 0.5rem;
+            animation: bounce;
+            /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 2s;
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            .tables,
+            .container {
                 flex-direction: column;
-                padding: 10px;
-            }
-            .tables{
-                display: flex;
-                align-items: flex-start;
-                
-            }
-            table{
-                margin: 10px;
-                margin-top: 0px;
-            }
-            .footer-text {
-                text-align: center;
-                font-weight: 400;
-                font-family: "Google Sans Regular";
-                background-image: linear-gradient(to left,rgb(226, 236, 242),rgb(150, 191, 244),rgb(195, 235, 243),rgb(226, 236, 242));
-                padding: 10px;
-            }
-            .footer-text a{
-                 color: black;
-            }
- 
-            .footer-div {
-                margin-top: 2rem;
+                align-items: center;
 
-            }  
-            .title{
-                font-size: 2rem;
-                margin: 0px;
-                margin-bottom:10px;
-                text-align: center;
-                padding: 10px;
-                background-image: linear-gradient(to left,rgb(226, 236, 242),rgb(150, 191, 244),rgb(195, 235, 243),rgb(226, 236, 242));
-                font-weight: 500;
-                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-            }
-            .sub-title{
-                margin-bottom:10px;
-                font-family:sans-serif;
-                font-weight: 500;
             }
 
-            #dice{
-                display: inline-block;
-                margin: 0 0.5rem;
-                animation: bounce; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; 
+            .tables {
+                width: 100%;
             }
-              
-            @media only screen and (max-width: 600px) {
-                .tables,.container{
-                    flex-direction: column;
-                    align-items: center;
-                   
-                }
-                .tables{
-                    width:100%;
-                }
-                table{
-                    width: 90%;
-                }
-                h1{
-                    text-align: center;
-                }
-                .title{
-                    font-size: 1.8rem;
-                }
-              }
-        </style>
-    </head>   
-    <body>
-        <p class="title"> <span id="dice" class="animate__animated animate__infinite infinite animate__bounce   animate__fast 800ms" >🎲</span>MSc(CS) Assignments 🧑‍💻 </p>
-        <div class="container" >
+
+            table {
+                width: 90%;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p class="title"> <span id="dice"
+            class="animate__animated animate__infinite infinite animate__bounce   animate__fast 800ms">🎲</span>MSc(CS)
+        Assignments 🧑‍💻 </p>
+    <div class="container">
         <h3 class="sub-title">Full Stack UI 🌐</h3>
         <div class="tables">
-        <table >
-            <caption>Assignment-1(Lecture)</caption>
-            <thead>
-                <th>Question</th>
-                <th>Code</th>
-                <th>Live Demo</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Question-1</td>
-                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex1.html">Code</a></td>
-                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex1.html">View</a></td>
-                </tr>
-                <tr>
-                    <td>Question-2</td>
-                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex2.html">Code</a></td>
-                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex2.html">View</a></td>
-                </tr>
-                <tr>
-                    <td>Question-3</td>
-                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex3.html">Code</a></td>
-                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex3.html">View</a></td>
-                </tr>
-                <tr>
-                    <td>Question-4</td>
-                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex4.html">Code</a></td>
-                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex4.html">View</a></td>
-                </tr>
-                <tr>
-                    <td>Question-5</td>
-                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex5.html">Code</a></td>
-                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex5.html">View</a></td>
-                </tr>
-                <tr>
-                    <td>Question-6</td>
-                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex6.html">Code</a></td>
-                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex6.html">View</a></td>
-                </tr>
-                <tr>
-                    <td>Question-7</td>
-                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex7.html">Code</a></td>
-                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex7.html">View</a></td>
-                </tr>
-                <tr>
-                    <td>Question-8</td>
-                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex8.html">Code</a></td>
-                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex8.html">View</a></td>
-                </tr>
-                <tr>
-                    <td>Question-9</td>
-                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex9.html">Code</a></td>
-                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex9.html">View</a></td>
-                </tr>
-		 <tr>
-                    <td>Question-11</td>
-                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/college/home.html">Code</a></td>
-                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/college/home.html">View</a></td>
-                </tr>
+            <table>
+                <caption>Assignment-1(Lecture)</caption>
+                <thead>
+                    <th>Question</th>
+                    <th>Code</th>
+                    <th>Live Demo</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Question-1</td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex1.html">Code</a>
+                        </td>
+                        <td><a
+                                href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex1.html">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Question-2</td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex2.html">Code</a>
+                        </td>
+                        <td><a
+                                href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex2.html">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Question-3</td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex3.html">Code</a>
+                        </td>
+                        <td><a
+                                href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex3.html">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Question-4</td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex4.html">Code</a>
+                        </td>
+                        <td><a
+                                href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex4.html">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Question-5</td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex5.html">Code</a>
+                        </td>
+                        <td><a
+                                href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex5.html">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Question-6</td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex6.html">Code</a>
+                        </td>
+                        <td><a
+                                href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex6.html">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Question-7</td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex7.html">Code</a>
+                        </td>
+                        <td><a
+                                href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex7.html">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Question-8</td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex8.html">Code</a>
+                        </td>
+                        <td><a
+                                href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex8.html">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Question-9</td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/Asg1Ex9.html">Code</a>
+                        </td>
+                        <td><a
+                                href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/Asg1Ex9.html">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Question-11</td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1/college/home.html">Code</a>
+                        </td>
+                        <td><a
+                                href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1/college/home.html">View</a>
+                        </td>
+                    </tr>
 
-            </tbody>
-        </table>    
-        <table >
-            <caption>Assignment-1(Lab)</caption>
-            <thead>
-                <th>Question</th>
-                <th>Code</th>
-                <th>Live Demo</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Question-1</td>
-                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1a/Asg1aEx1.html">Code</a></td>
-                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1a/Asg1aEx1.html">View</a></td>
-                </tr>
-                <tr>
-                    <td>Question-2</td>
-                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1a/Asg1aEx2a.html">Code</a></td>
-                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1a/Asg1aEx2a.html">View</a></td>
-                </tr>
-                <tr>
-                    <td>Question-3</td>
-                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1a/Asg1aEx3.html">Code</a></td>
-                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1a/Asg1aEx3.html">View</a></td>
-                </tr>
-                
+                </tbody>
+            </table>
+            <table>
+                <caption>Assignment-1(Lab)</caption>
+                <thead>
+                    <th>Question</th>
+                    <th>Code</th>
+                    <th>Live Demo</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Question-1</td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1a/Asg1aEx1.html">Code</a>
+                        </td>
+                        <td><a
+                                href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1a/Asg1aEx1.html">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Question-2</td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1a/Asg1aEx2a.html">Code</a>
+                        </td>
+                        <td><a
+                                href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1a/Asg1aEx2a.html">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Question-3</td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-1a/Asg1aEx3.html">Code</a>
+                        </td>
+                        <td><a
+                                href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-1a/Asg1aEx3.html">View</a>
+                        </td>
+                    </tr>
 
-            </tbody>
-        </table>
-        <table >
-            <caption>Assignment-2(Lab-CSS)</caption>
-            <thead>
-                <th>Question</th>
-                <th>Code</th>
-                <th>Live Demo</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Question-1</td>
-                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-2/Ex1.html">Code</a></td>
-                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-2/Ex1.html">View</a></td>
-                </tr>
-                <tr>
-                    <td>Question-2</td>
-                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-2/Ex2.html">Code</a></td>
-                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-2/Ex2.html">View</a></td>
-                </tr>
-                <tr>
-                    <td>Question-3</td>
-                    <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-2/Ex3.html">Code</a></td>
-                    <td><a href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-2/Ex3.html">View</a></td>
-                </tr>
-                
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+            <table>
+                <caption>Assignment-2(Lab-CSS)</caption>
+                <thead>
+                    <th>Question</th>
+                    <th>Code</th>
+                    <th>Live Demo</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Question-1</td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-2/Ex1.html">Code</a>
+                        </td>
+                        <td><a
+                                href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-2/Ex1.html">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Question-2</td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-2/Ex2.html">Code</a>
+                        </td>
+                        <td><a
+                                href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-2/Ex2.html">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Question-3</td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Assignment-2/Ex3.html">Code</a>
+                        </td>
+                        <td><a
+                                href="https://harish-kushwah.github.io/dev-journey-assignments/Assignment-2/Ex3.html">View</a>
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+
         </div>
 
-        </div>
-        <hr>
-        <div class="container">
-            <h3 class="sub-title">Analysis of Algorithm and Computing 💻</h3>
-            <table >
+    </div>
+    <hr>
+    <div class="container">
+        <h3 class="sub-title">Analysis of Algorithm and Computing 💻</h3>
+        <div class="tables">
+            <table>
                 <caption>Assignment-1(Lab)</caption>
                 <thead>
                     <th>Date</th>
                     <th>Question</th>
                     <th>Code</th>
-                    
+
                 </thead>
                 <tbody>
                     <tr>
                         <td rowspan="2">18/07/2024</td>
                         <td>Question-1</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/18-07-24/Ex1.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/18-07-24/Ex1.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-2</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/18-07-24/Ex2.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/18-07-24/Ex2.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td rowspan="4">19/07/2024</td>
                         <td>Question-1</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/19-07-24/Ex1.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/19-07-24/Ex1.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-2</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/19-07-24/Ex2.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/19-07-24/Ex2.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-3</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/19-07-24/Ex3.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/19-07-24/Ex3.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-4</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/19-07-24/Ex4.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/19-07-24/Ex4.cpp">Code</a>
+                        </td>
                     </tr>
 
                     <tr>
                         <td rowspan="10">29/07/2024</td>
                         <td>Question-1</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex1.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex1.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-2</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex2.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex2.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-3</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex3.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex3.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-4</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex4.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex4.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-5</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex5.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex5.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-6</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex6.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex6.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-7</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex7.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex7.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-8</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex8.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex8.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-9</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex9.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex9.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-10</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex10.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/29-07-24/Ex10.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td rowspan="8">31/07/2024</td>
                         <td>Question-1</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/31-07-24/Ex1.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/31-07-24/Ex1.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-2</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/31-07-24/Ex2.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/31-07-24/Ex2.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-3</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/31-07-24/Ex3.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/31-07-24/Ex3.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-4</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/31-07-24/Ex4.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/31-07-24/Ex4.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-5</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/31-07-24/Ex5.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/31-07-24/Ex5.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-6</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/31-07-24/Ex6.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/31-07-24/Ex6.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-8</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/31-07-24/Ex8.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/31-07-24/Ex8.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Question-9</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/31-07-24/Ex9.cpp">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/31-07-24/Ex9.cpp">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td rowspan="7">Sorting</td>
                         <td>Bubble Sort</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/sorting/bubble_sort.c">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/sorting/bubble_sort.c">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Insertion Sort</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/sorting/insertion_sort.c">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/sorting/insertion_sort.c">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Selection Sort</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/sorting/selection_sort.c">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/sorting/selection_sort.c">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Heap Sort</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/sorting/heap_sort.c">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/sorting/heap_sort.c">Code</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Counting Sort</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/sorting/counting_sort.c">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/sorting/counting_sort.c">Code</a>
+                        </td>
                     </tr>
-                     <tr>
+                    <tr>
                         <td>Quick Sort</td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/sorting/quick_sort.c">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/sorting/quick_sort.c">Code</a>
+                        </td>
                     </tr>
-                   <tr>
+                    <tr>
                         <td>Bucket Sort<small>(optional)</small></td>
-                        <td><a href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/sorting/bucket_sort.c">Code</a></td>
+                        <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/AAC/sorting/bucket_sort.c">Code</a>
+                        </td>
                     </tr>
-                    
+
                 </tbody>
             </table>
-        </div>
+            <table>
+                <caption>Theory Assignment</caption>
+                <thead>
+                    <th>Sub</th>
+                    <th>No.</th>
+                    <th>View</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AAC</td>
+                        <td>Assignment-1</td>
+                        <td><a
+                                href="https://harish-kushwah.github.io/dev-journey-assignments/Theory/AAC_Assignment.pdf">View</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            
+            </div>
 
 
-        <footer>
-        <div className="footer-div">
-            <p class="footer-text"> Made with ❤️ Harish-Kushwah <a href="https://github.com/Harish-Kushwah/dev-journey-assignments" alt="github link"> ⭐ Star Me On Github </a></p>
-        </div>
-        </footer>
+            <footer>
+                <div className="footer-div">
+                    <p class="footer-text"> Made with ❤️ Harish-Kushwah <a
+                            href="https://github.com/Harish-Kushwah/dev-journey-assignments" alt="github link"> ⭐ Star
+                            Me On Github </a></p>
+                </div>
+            </footer>
 
-    </body>
-    
+</body>
+
 </html>
