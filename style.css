@@ -30,6 +30,9 @@ a {
     align-items: flex-start;
     flex-direction: column;
     padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
 }
 
 .tables {
@@ -76,7 +79,13 @@ table {
     margin-bottom: 20px;
     font-family: sans-serif;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
+    box-shadow: 1px 1px 2px rgb(120, 118, 118) ;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    
 }
 
 #dice {
@@ -99,7 +108,7 @@ footer{
 .left-container{
     width: 15%;
     margin: 5px;
-    box-shadow: 1px 2px 3px rgb(120, 118, 118) ;
+    box-shadow: 1px 1px 3px rgb(120, 118, 118) ;
     padding: 10px;
     height: 100%;
 }
@@ -109,23 +118,30 @@ footer{
     box-shadow: 1px 2px 3px rgb(120, 118, 118) ;
 }
 .filter{
-    box-shadow: 1px 2px 3px rgb(120, 118, 118) ;
-    height: 50px;
+    box-shadow: 1px 1px 2px rgb(120, 118, 118) ;
+    height: 30px;
     margin: 5px;   
     display: flex;
     align-items: center;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 2px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     cursor: pointer;
     border-left: 4px solid white;
-    font-size: 18px;
-
-
+    font-size: 14px;
 }
 .filter:hover{
     border-left: 4px solid rgb(90, 222, 240);
     transition: 2s;
+}
+.filter p{
+    display: flex;
+    justify-content: space-between;
+   width: 100%;
+}
+.filter p span{
+    margin-right: 10px;
+    font-size: 15px;
 }
 
 .selected{
