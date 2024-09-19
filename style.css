@@ -1,0 +1,174 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(251, 251, 251);
+}
+
+table,
+th,
+tr,
+td {
+    border: 1px solid rgb(0, 0, 0);
+    font-family: sans-serif;
+
+}
+
+th,
+tr,
+td {
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.tables {
+    display: flex;
+    align-items: flex-start;
+
+}
+
+table {
+    margin: 10px;
+    margin-top: 0px;
+}
+
+.footer-text {
+    text-align: center;
+    font-weight: 400;
+    font-family: "Google Sans Regular";
+    background-image: linear-gradient(to left, rgb(226, 236, 242), rgb(150, 191, 244), rgb(195, 235, 243), rgb(226, 236, 242));
+    padding: 10px;
+}
+
+.footer-text a {
+    color: black;
+}
+
+.footer-div {
+    margin-top: 2rem;
+    width: 100%;
+
+}
+
+.title {
+    font-size: 2rem;
+    margin: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(to left, rgb(226, 236, 242), rgb(150, 191, 244), rgb(195, 235, 243), rgb(226, 236, 242));
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.sub-title {
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#dice {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+}
+footer{
+    width: 100%;
+}
+.page-container{
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    /* background-color: red; */
+    
+}
+.left-container{
+    width: 15%;
+    margin: 5px;
+    box-shadow: 1px 2px 3px rgb(120, 118, 118) ;
+    padding: 10px;
+    height: 100%;
+}
+.right-container{
+    width: 85%;
+    margin: 5px;
+    box-shadow: 1px 2px 3px rgb(120, 118, 118) ;
+}
+.filter{
+    box-shadow: 1px 2px 3px rgb(120, 118, 118) ;
+    height: 50px;
+    margin: 5px;   
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    border-left: 4px solid white;
+    font-size: 18px;
+
+
+}
+.filter:hover{
+    border-left: 4px solid rgb(90, 222, 240);
+    transition: 2s;
+}
+
+.selected{
+    border-left: 4px solid rgb(90, 222, 240);
+}
+
+@media only screen and (max-width: 900px) {
+
+    .tables,
+    .container {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .tables {
+        width: 100%;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+    .page-container{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .filter{
+
+    }   
+    .left-container{
+       width: 90%;
+       height: 100%;
+    }
+    .right-container{
+        width: 100%;
+    }
+}
