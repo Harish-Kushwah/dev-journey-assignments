@@ -22,6 +22,9 @@
             <div class="filter" id="aac-label" onclick="showAAC()">
                 <p>AAC <span>💻</span></p>
             </div>
+            <div class="filter" id="python-label" onclick="showPython()">
+                <p>Python <span><img src="./assests/python.png" alt=""></span></p>
+            </div>
         </div>
     <div class="right-container">
         <div class="container " id="full-stack-asg">
@@ -210,7 +213,6 @@
             </div>
 
         </div>
-    
        
         <div class="container" id="aac-asg">
                 <div class="sub-title">Analysis of Algorithm and Computing</div>
@@ -452,6 +454,85 @@
         </div>
        
         </div>
+        <div class="container" id="python-asg">
+                <div class="sub-title">Python</div>
+                <div class="tables">
+                <table>
+                    <caption>Assignment-1</caption>
+                    <thead>
+                        <th>Question</th>
+                        <th>Code</th>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Question-1</td>
+                            <td><a
+                                    href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Python/Assignment-1/Q1.py">Code</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Question-2</td>
+                            <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Python/Assignment-1/Q2.py">Code</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Question-3</td>
+                            <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Python/Assignment-1/Q3.py">Code</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Question-4</td>
+                            <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Python/Assignment-1/Q4.py">Code</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Question-5</td>
+                            <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Python/Assignment-1/Q5.py">Code</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Question-6</td>
+                            <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Python/Assignment-1/Q6.py">Code</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Question-7</td>
+                            <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Python/Assignment-1/Q7.py">Code</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Question-8</td>
+                            <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Python/Assignment-1/Q8.py">Code</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Question-9</td>
+                            <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Python/Assignment-1/Q9.py">Code</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Question-10</td>
+                            <td><a
+                                href="https://github.com/Harish-Kushwah/dev-journey-assignments/blob/main/Python/Assignment-1/Q10.py">Code</a>
+                            </td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+               
+                
+        </div>
+       
+        </div>
     </div>
 
     </div>
@@ -468,27 +549,45 @@
     <script>
         var full_stack_asg = document.getElementById("full-stack-asg");
         var aac_asg = document.getElementById("aac-asg");
+        var python_asg = document.getElementById("python-asg");
 
         var full_stack_label = document.getElementById("full-stack-label");
         var aac_label = document.getElementById("aac-label");
+        var python_label = document.getElementById("python-label")
 
         function hideAll(){
             full_stack_asg.style.display = "none";
             aac_asg.style.display = "none";
+            python_asg.style.display = "none";
         }
         function showFullStack(){
             full_stack_asg.style.display = "flex";
             aac_asg.style.display = "none";
-            console.log(full_stack_label.classList);
+            python_asg.style.display = "none";
+
             full_stack_label.classList.add("selected");
             aac_label.classList.remove("selected");
+            python_label.classList.remove("selected");
         }
 
         function showAAC(){
-            aac_asg.style.display = "flex";
             full_stack_asg.style.display = "none";
+            aac_asg.style.display = "flex";
+            python_asg.style.display = "none";
+            
             full_stack_label.classList.remove("selected");
             aac_label.classList.add("selected");
+            python_label.classList.remove("selected");
+
+        }
+        function showPython(){
+            full_stack_asg.style.display = "none";
+            aac_asg.style.display = "none";
+            python_asg.style.display = "flex";
+           
+            full_stack_label.classList.remove("selected");
+            aac_label.classList.remove("selected");
+            python_label.classList.add("selected");
 
         }
 

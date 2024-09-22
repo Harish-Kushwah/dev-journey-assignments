@@ -143,6 +143,10 @@ footer{
     margin-right: 10px;
     font-size: 15px;
 }
+.filter p span img{
+    width: 20px;
+    height: 20px;
+}
 
 .selected{
     border-left: 4px solid rgb(90, 222, 240);
