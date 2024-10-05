@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 0px 3px rgb(77, 75, 73);
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+
+            width: 500px;
+
+        }
+
+        input {
+            width: 200px;
+            height: 25px;
+            border: 0px solid gray;
+            box-shadow: 0px 0px 3px rgb(77, 75, 73);
+            margin-top: 5px;
+            padding: 5px;
+        }
+        .form-field {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        button{
+            width: 200px;
+            height: 30px;
+            background-color: rgb(13, 100, 230);
+            color: white;
+            border: 0px;
+            cursor: pointer;
+        }
+        .salary-slip{
+            margin-top: 10px;
+            align-items: flex-start;
+            border-style:dotted ;
+            border-width:1px ;
+            padding: 0px;
+        }
+        .title{
+            text-align: center;
+            width: 100%;
+            font-size: 30px; 
+            margin: 0px;
+  
+           
+           padding: 5px;
+        }
+        .sub-info{
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 1px dotted black;
+            margin-left: 10px;
+            padding: 5px;
+        }
+        .points{
+            width: 200px;
+        }
+        .info{
+            border-bottom: 1px dotted black;
+            width: 100%;  
+        }
+        .info p{
+            margin-left: 10px;
+        }
+        span{
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div action="" class="form" >
+        <h1>Employee Details</h1>
+        <div class="form-field">
+            <label for="">Name </label>
+            <input type="text" placeholder="Enter Name" id="name">
+        </div>
+        <div class="form-field">
+            <label for="">Basic Salary</label>
+            <input type="text" placeholder="Enter basic salary" id="basic-salary">
+        </div>
+        <div class="form-field">      
+            <button onclick="generateSalarySlip(this)">Generate Salary Slip</button>
+        </div>
+    </div>
+
+    <div class="form salary-slip">
+        <p class="title">Salary Slip</p>
+        <div class="info">
+            <p>Name : <span id="slip-name"></span> </p>
+        </div>
+        <div class="sub-info">
+        <div class="points">
+        <p>DA:  <span id="da"></span></p>
+        </div>
+        <div class="points">
+        <p>HRA:  <span id="hra"></span></p>
+        </div>
+        <div class="points">
+        <p>PF:  <span id="pf"></span></p>
+        </div>
+        <div class="points">
+        <p>TAX:  <span id="tax"></span></p>
+        </div>
+        <div class="points">
+        <p>Gross Pay:  <span id="gp"></span></p>
+        </div>
+        <div class="points">
+        <p>Deduction:  <span id="dd"></span></p>
+        </div>
+        <div class="points">
+        <p>Net Pay:  <span id="np"></span></p>
+        </div>
+       </div>
+    </div>
+    <script>
+        function generateSalarySlip(event){
+           var name = document.getElementById("name").value;
+           var slip_name = document.getElementById("slip-name");
+           slip_name.innerText = name;
+
+           var bsal = document.getElementById("basic-salary").value;
+           var da = (bsal*(0.10)).toFixed(3);
+           var hra = (bsal *(0.30)).toFixed(3);
+           var pf = (bsal *(0.20)).toFixed(3);
+           var tax = (bsal *(0.15)).toFixed(3);
+           var grosspay = bsal + da + hra;
+           var deduction = tax + pf;
+           var netpay = parseFloat(grosspay) - parseFloat(deduction);
+
+           document.getElementById("da").innerText = da
+           document.getElementById("hra").innerText = hra
+           document.getElementById("pf").innerText = pf
+           document.getElementById("tax").innerText = tax
+           document.getElementById("gp").innerText = parseFloat(grosspay).toFixed(3);
+           document.getElementById("dd").innerText = parseFloat(deduction).toFixed(3);
+           document.getElementById("np").innerText = parseFloat(netpay).toFixed(3);
+           
+        }
+    </script>
+</body>
+
+</html>

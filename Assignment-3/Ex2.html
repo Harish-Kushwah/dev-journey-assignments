@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+        .display{
+            margin: 10px;
+            display: flex;
+            align-items: center;
+
+        }
+        input,#result{
+            height: 20px;
+            padding: 5px;
+            margin: 10px;
+       
+        }
+      
+        #result{
+            height: 20px;
+            padding: 5px;
+            border: 1px solid black;
+            width: 150px;
+            margin-left: 10px;
+        }
+        button{
+            border: 0px;
+            width: 30px;
+            height: 30px;
+            color: white;
+            background-color: rgba(110, 3, 65, 0.842);
+            cursor: pointer;
+          
+
+        }
+        .buttons{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Simple Calculator</h3>
+        <div class="display">
+            <input type="text" id="num1" placeholder="Enter parseInt one">
+            <span id="operator"></span>
+            <input type="text" id="num2" placeholder="Enter parseInt two">
+            
+            <span >=</span>
+            <div id="result"></div>
+        </div>
+        <div class="buttons">
+            <button onclick="add()">+</button>
+            <button onclick="sub()">-</button>
+            <button onclick="div1()">/</button>
+            <button onclick="multi()">*</button>
+            <button onclick="mod()">%</button>
+        </div>
+    </div>
+
+    <script>
+
+     
+        var result = document.getElementById("result");
+        var opearator = document.getElementById("operator");
+
+        function add(){
+            let num1 =parseFloat(document.getElementById("num1").value);
+            let num2 =parseFloat(document.getElementById("num2").value);
+            result.innerText = num1 +  num2;
+            opearator.innerText = "+";
+        }
+        function sub(){
+            let num1 =parseFloat(document.getElementById("num1").value);
+            let num2 =parseFloat(document.getElementById("num2").value);
+            result.innerText = num1 -  num2;
+            opearator.innerText = "-";
+
+        }
+        function div1(){
+            let num1 =parseFloat(document.getElementById("num1").value);
+            let num2 =parseFloat(document.getElementById("num2").value);
+            result.innerText = num1 +  num2;
+            opearator.innerText = "/";
+
+        }
+        function multi(){
+            let num1 =parseFloat(document.getElementById("num1").value);
+            let num2 =parseFloat(document.getElementById("num2").value);
+            result.innerText = num1 * num2;
+            opearator.innerText = "*";
+
+        }
+        function mod(){
+            let num1 =parseFloat(document.getElementById("num1").value);
+            let num2 =parseFloat(document.getElementById("num2").value);
+            result.innerText = num1 %  num2;
+            opearator.innerText = "%";
+
+        }
+
+    </script>
+</body>
+</html>

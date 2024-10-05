@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Assignment -1</title>
+</head>
+<style>
+    .canvas {
+        width: 400;
+        height: 400;
+        border: 1px solid black
+    }
+
+    form {
+        border: 1px solid blue;
+        padding: 10px;
+        width: 400px;
+        border-radius: 5px;
+
+    }
+
+    #canvas-img {
+        width: 100%;
+    }
+
+    .form-field {
+        margin: 10px;
+    }
+
+    #asg-form #name,
+    #age {
+        height: 20px;
+    }
+
+    select {
+        height: 25px;
+
+    }
+
+    .btn {
+        border-radius: 2px;
+        cursor: pointer;
+
+
+    }
+</style>
+
+<body>
+
+
+    <h1>Registration Form </h1>
+    <form id="asg-form" onsubmit="return validateForm() ">
+        <div class="form-field">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter Name ">
+        </div>
+        <div class="form-field">
+            <label>Phone Number</label>
+            <input type="text" id="phone-number" placeholder="Enter Phone Number ">
+        </div>
+       
+        <div class="form-field ">
+            <label>Gender:</label>
+            <div class="radio-btns">
+                <input type="radio" name="gender"><label>Male</label>
+                <input type="radio" name="gender"><label>Female</label>
+            </div>
+
+        </div>
+        <div class="form-field">
+            <label>Status:<label>
+                    <div class="radio-btns">
+                        <input type="radio" class="" name="status"><label>Employed</label>
+                        <input type="radio" name="status"><label>Unemployed</label>
+                        <input type="radio" name="status"><label>Student</label>
+                    </div>
+
+        </div>
+
+        <div class="form-field">
+            <button style="height:28px; background-color:green; color:white; border:0px;margin-top:10px"
+                class="btn">Submit</button>
+            <input type="reset" style="height:28px; background-color:blue; color:white; border:0px;margin-top:10px"
+                class="btn">
+        </div>
+
+
+    </form>
+    <hr>
+
+    <script>
+        function validateForm() {
+          
+            let name = document.getElementById("name").value;
+            var nameRGX = /^[a-zA-Z]*$/;
+
+            if (name == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            else if(!nameRGX.test(name)){
+                alert("Name must contain ony alphabets");
+                return false;
+            }
+
+            let phone_number = document.getElementById("phone-number").value;
+            var numberRGX = /^[0-9]*$/;
+
+            if (phone_number == "") {
+                alert("Number must be filled out");
+                return false;
+            }
+            else if(!numberRGX.test(phone_number)){
+                alert("Number must contain ony digits");
+                return false;
+            }
+            
+            
+            return true;
+        }
+    </script>
+
+
+</body>
+
+</html>

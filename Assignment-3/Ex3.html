@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Count Vowels</title>
+    <title>Document</title>
 </head>
 <body>
-    <label for="">Enter Name : </label>
+    <label for="">Enter name : </label>
     <input type="text" id="name">
-    <button onclick="countVowels()">Count</button>
-    <p id="msg"></p>
+    <button onclick="countVowels()">count</button>
+    <br>
+    <p id="vowels"></p>
 
     <script>
         function countVowels(){
-            var name = document.getElementById("name").value;
-            var vowels = 'aeiouAEIOU';
+            const name = document.getElementById("name").value;
+            const total_vowels = document.getElementById("vowels");
 
-            var count  = 0;
+            let count = 0;
+            let vowels = 'aeiouAEIOU';
             for(let ch of name){
                 if(vowels.includes(ch)){
-                    count++;
+                    count++
                 }
             }
-
-            document.getElementById("msg").innerText = `Total Vowels ${count}`;
+            total_vowels.innerText = `Total Vowles in name is ${count}`;
 
         }
     </script>
