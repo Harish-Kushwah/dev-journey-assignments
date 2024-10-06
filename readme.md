@@ -34,8 +34,14 @@ Welcome to the Dev Journey Assignments repository! Here, you will find a collect
 | Question | Code | Live Link |
 |----------|------|-----------|
 | Question 1 | [Code](Assignment-2/Ex1.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-2/Ex1.html) |
-| Question 2 | [Code](Assignment-2/Ex2.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-3/Ex2.html) |
+| Question 2 | [Code](Assignment-2/Ex2.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-2/Ex2.html) |
 | Question 3 | [Code](Assignment-2/Ex3.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-2/Ex3.html) |
+##### Assignment-3
+| Question | Code | Live Link |
+|----------|------|-----------|
+| Question 1 | [Code](Assignment-2/Ex1.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-3/Ex1.html) |
+| Question 2 | [Code](Assignment-2/Ex2.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-3/Ex2.html) |
+| Question 3 | [Code](Assignment-2/Ex3.html) | [Live Link](https://harish-kushwah.github.io/dev-journey-assignments/Assignment-3/Ex3.html) |
 
 ## How to Use
 
