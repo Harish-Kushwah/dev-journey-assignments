@@ -17,11 +17,11 @@ int partition(int arr[],int low,int high){
     swap(&arr[low],&arr[k]);
     return k;
 }
-void heapSort(int arr[],int low,int high){
+void quickSort(int arr[],int low,int high){
     if(low<high){
         int pivotIndex = partition(arr,low,high);
-        heapSort(arr,0,pivotIndex-1);
-        heapSort(arr,pivotIndex+1 , high);
+        quickSort(arr,0,pivotIndex-1);
+        quickSort(arr,pivotIndex+1 , high);
     }
 }
 void printArr(int arr[] , int n){
@@ -35,7 +35,7 @@ int main(){
     int n = sizeof(arr)/sizeof(arr[0]);
     printf("Array before sorting :");
     printArr(arr,n);
-    heapSort(arr,0,n-1);
+    quickSort(arr,0,n-1);
     printf("Array after sorting :");
     printArr(arr,n);
 
